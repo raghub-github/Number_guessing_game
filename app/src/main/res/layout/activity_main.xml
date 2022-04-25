@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/txv_text1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Random Number Bellow Here"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/txv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Random Number Is Here"
+            android:textColorHint="#C14BF4"
+            android:layout_below="@+id/txv_text1"
+            android:visibility="gone"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+        <Button
+            android:id="@+id/btn_btn1"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/txv_text2"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="30dp"
+            android:text="click here to generate number"
+            android:textColor="#ffffff"
+
+
+            />
+        <TextView
+            android:id="@+id/txv_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess the number between 0 to 100 bellow and press check button"
+            android:layout_below="@+id/btn_btn1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+        <EditText
+            android:id="@+id/edt_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your number"
+            android:textSize="25dp"
+            android:layout_below="@+id/txv_text3"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:gravity="center"
+            android:textColorHint="#CB8686"
+            android:background="#ffffff"
+            android:layout_marginTop="20dp"
+
+
+            />
+        <Button
+            android:id="@+id/btn_btn2"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/edt_edit1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:text="Check here"
+            android:textSize="20dp"
+            android:backgroundTint="#F44336"
+            />
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
